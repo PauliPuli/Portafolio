@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+}
+
+h1 {
+    color: #ffffff;
+}
+.masthead {
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+#titulohero{
+    font-weight: 700;
+}
+
+#titulofooter {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+#parrafohero {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.navbar {
+    background-color: #b9b9b9;
+    height: 100px;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+}
+
+.nav-item {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding-right: 19px;
+}
+
+
+.galeria {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    grid-gap: 20px;
+    padding: 100px 0;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box:nth-child(1) {
+    grid-column-start: span 2;
+}
+
+.box:nth-child(4) {
+    grid-column-start: span 2;
+}
+
+@media(max-width:991px) {
+    .galeria {
+        padding: 30px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .box:nth-child(1) {
+        grid-column-start: span 1;
+    }
+
+    .box:nth-child(4) {
+        grid-column-start: span 1;
+    }
+}
+
+#fotoperfil {
+    margin-top: 50px;
+}
+
+#tittleacerca {
+color: #496C7A;
+font-weight: 700;
+}
+p {
+    font-weight: 400;
+    font-size: 21px;
+
+}
+
+footer {
+    background-color: #496C7A;
+    padding: 50px;
+}
+
+.card {
+    background:#E2F3FB;
+    color: #6E777A;
+    padding: 8px;
+}
+
+.card:hover {
+    background: #fff;
+    color: #666;
+    padding: 20px;
+    border: 1px solid: #96DCFAa;
+
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+.card-text {
+    font-size: 16px;
+    font-weight: 400;
+}
+.h2-cardtittle {
+    font-size: 21px;
+    font-weight: 700;
+    color: #496C7A;
+}
+
+body {
+    background: linear-gradient(135deg, #ffff, #E2F3FB);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+hr.divider {
+    height: 0.4rem;
+    max-width: auto;
+    margin: 1.5rem auto;
+    background-color: #96DCFA;
+    opacity: 1;
+}
+
