@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0
+}
+html {
+    scroll-behavior: smooth;
+   }
 body {
     margin: 0;
     padding: 0;
@@ -28,7 +35,6 @@ h1 {
 }
 
 .navbar {
-    background-color: #b9b9b9;
     height: 100px;
 }
 
@@ -37,7 +43,9 @@ h1 {
     font-family: 'Inter', sans-serif;
     font-size: 30px;
 }
-
+nav:hover {
+    scroll-behavior: var(--darkgrey);
+    }
 .nav-item {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -55,6 +63,7 @@ h1 {
     grid-gap: 20px;
     padding: 100px 0;
 }
+
 
 .box img {
     width: 100%;
@@ -85,8 +94,9 @@ h1 {
     }
 }
 
-#fotoperfil {
+.fotoperfil {
     margin-top: 50px;
+    border-radius: 50%;
 }
 
 #tittleacerca {
@@ -154,7 +164,8 @@ hr.divider {
     height: 0.4rem;
     max-width: auto;
     margin: 1.5rem auto;
-    background-color: #96DCFA;
+    color: #96DCFA;
+    background-color:#96DCFA ;
     opacity: 1;
 }
 
