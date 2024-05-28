@@ -25,9 +25,9 @@
 
 <body>
   <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg navbar-dark py-2 px-4 fixed-top fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark py-1 px-4 fixed-top fixed-top">
     <div class="container px-4">
-      <a class="navbar-brand" href="#"><img src="./assets/img/PSM Curriculum 2022_ps-brand.png" width="60px"></a>
+      <a class="navbar-brand" href="#section1"><img src="./assets/img/PSM Curriculum 2022_ps-brand.png" width="50px"></a>
       <button class="navbar-toggler navbar-dark border-light" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -36,13 +36,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item active">
-            <a class="nav-link text-light" href="#">Acerca de mí<span class="sr-only"></span></a>
+            <a class="nav-link text-light" href="#section2">Portafolio<span class="sr-only"></span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Portafolio</a>
+            <a class="nav-link text-light" href="#section3">Acerca de mí</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Contacto</a>
+            <a class="nav-link text-light" href="#section4">Contacto</a>
           </li>
         </ul>
       </div>
@@ -50,7 +50,7 @@
   </nav>
 
   <!-- Page Header-->
-  <header class="masthead" style="background-image: url(./assets/img/degrade-hero.jpg)">
+  <header class="masthead" style="background-image: url(./assets/img/degrade-hero.jpg)" id="section1">
     <div class="container px-4 px-lg-5 h-100">
       <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
           <div class="col-lg-8 align-self-end">
@@ -64,27 +64,8 @@
   </div>
   </header>
 
-  <!-- Sección foto de perfil y descripción-->
-  <div class="container">
-    <div class="row my-5 pt-5">
-      <div class="col-md-6 d-flex justify-content-center">
-        <img class="fotoperfil" src="./assets/img/PSM_foto-perfil.jpg" alt="Foto de perfil" height="280px">
-      </div>
-      <div class="col-md-6 justify-content-center align-self-center pt-5">
-        <h1 id="tittleacerca">Amor por el UIUX</h1>
-        <br>
-        <p>El diseño UIUX ha sido un mundo nuevo para mí y me ha encantado. Estamos en una era digital
-          en la que debemos comprometernos con la responsabilidad que conlleva crear un espacio para todos.</p>
-        <p>Dentro de mis especialidades en el rubro es el diseño de marca, es como crear un personaje
-          con su propia historia que va a ser compartida al mundo. También sé animar elementos básicos en after efect,
-          un complemento para la historia de esta marca.</p>
-      </div>
-    </div>
-  </div>
-
-
-  <main>
-    <div class="galeria" id="portfolio">
+  <main class="container">
+    <div class="galeria" id="section2" >
       <div class="box">
         <img src="./assets/img/g1.png" alt="imagen 1">
       </div>
@@ -95,7 +76,7 @@
         <img src="./assets/img/g3.png" alt="imagen 3">
       </div>
       <div class="box">
-        <img src="./assets/img/g4.png" alt="imagen 4">
+        <a href="https://paulipuli.github.io/SuperHero/" target="_blank"><img src="./assets/img/SuperHero.png" alt="imagen 4"></a>
       </div>
       <div class="box">
         <img src="./assets/img/g5.png" alt="imagen 5">
@@ -104,7 +85,7 @@
         <img src="./assets/img/g6.png" alt="imagen 6">
       </div>
       <div class="box">
-        <img src="./assets/img/g7.png" alt="imagen 7">
+        <img src="./assets/img/g4.png" alt="imagen 7">
       </div>
     </div>
   </main>
@@ -133,20 +114,32 @@
       </div>
       <div class="col-md-4 col-sm-12 d-flex justify-content-center py-3">
         <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="./assets/img/wireflow-pago.png" alt="Card image cap">
+          <a href="https://www.behance.net/gallery/173464379/DCU-Sistema-universal-de-pago-para-servicios-basicos" target="_blank"><img class="card-img-top" src="./assets/img/wireflow-pago.png" alt="Card image cap"></a>
           <div class="card-body">
             <h2 class="h2-cardtittle">Wireflow</h2>
             <p class="card-text">Esquemas que permiten expresar el flujo de navegación de la propuesta en base a las necesidades del ususario.</p>
           </div>
         </div>
-
-
       </div>
     </div>
 </section>
+  <!-- Sección foto de perfil y descripción-->
+  <div class="container" id="section3">
+    <div class="row my-5 ps-5 pt-5">
+      <div class="col-md-6 justify-content-center">
+        <img class="fotoperfil" src="./assets/img/PSM_foto-perfil.jpg" alt="Foto de perfil" height="280px">
+      </div>
+      <div class="col-md-6 justify-content-center align-self-center pt-5">
+        <h1 id="tittleacerca">Acerca de mí</h1>
+        <br>
+        <p>Diseñadora gráfica de profesión embarcada en el mundo TI a través del diseño UI UX y recientemente, al desarrollo full stack JavaScript, comprendiendo las estructuras del lenguaje html, css, js y sql .
+          </p>
+        <p>Me gusta analizar cómo se comunica una marca en las redes sociales, la percepción que tienen los usuarios de esta y los lenguajes verbales y visuales que los identifica.</p>
+      </div>
+    </div>
+  </div>
 
-
-  <footer>
+  <footer style="background-image: url(./assets/img/degrade-hero.jpg)" id="section4">
     <!-- Sección formulario de contacto-->
     <div class="row justify-content-center">
       <div class="col-lg-8 col-xl-7 m-5 ">
@@ -207,7 +200,7 @@
     </div>
 
     <!-- Sección redes sociales-->
-    <section class="container my-5">
+    <section class="container my-2">
       <div class="row">
       <div class="col-md-12 col-sm-12 p-3 d-flex justify-content-center">
       <a href="https://www.linkedin.com/in/paulina-san-martin-sandoval/" target="_blank"><i class="fa-brands fa-linkedin-in fa-2x px-2" style="color: #ffffff;"></i></a>
